@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header
+      class="bg-dark d-flex flex-column px-5 position-fixed top-0 w-100 z-10">
+      <div class="promo text-white text-center py-1 fw-light">
+        Masukkan Promo Code: FASILITASAMA , dapatkan 50% Cashback
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        aria-label="Fifth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#"
+            >GRIYA<span class="fw-light">BOX</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample05"
+            aria-controls="navbarsExample05"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarsExample05">
+            <form role="search" class="flex-fill px-3">
+              <input
+                class="form-control my-4 my-lg-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search" />
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-auto">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+              </li>
+              <li class="nav-item dropdown mx-auto">
+                <a
+                  class="nav-link dropdown-toggle text-white mx-auto"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-person-circle"
+                    viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" /></svg
+                ></a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end mt-2 px-2"
+                  data-bs-popper="static">
+                  <li>
+                    <a class="dropdown-item text-center rounded-3" href="#"
+                      >Masuk</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-center rounded-3" href="#"
+                      >Daftar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container px-3 d-flex flex-row justify-content-between pb-3 pt-2">
+        <div></div>
+        <div>
+          <a href="#" class="text-decoration-none text-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" /></svg
+            >Dikirim Dari Jakarta
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+    <!-- jumbotron start -->
+    <div class="container py-3 my-5">
+      <div class="row mx-1 mx-sm-0 mt-5 mt-sm-0">
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-4"></div>
+        <div class="p-5 mb-4 bg-light rounded-3 bg-lap py-5">
+          <div class="container-fluid py-8">
+            <h1 class="display-5 fw-bold text-white text-center text-lg-start">
+              GRIYA<span class="fw-normal">BOX</span> MAKMUR
+            </h1>
+            <p
+              class="col-md-8 fs-4 text-white fw-semibold text-center text-lg-start">
+              Authorized Laptop & Smartphone Distributor
+            </p>
+            <button class="btn btn-dark btn-lg" type="button">
+              Tentang Saya
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+
+    <!-- Limited Offer Start -->
+    <div class="container my-5">
+      <div class="row">
+        <h2
+          class="tiltes d-flex flex-row justify-content-between align-content-center py-2">
+          Limited Offer
+        </h2>
+      </div>
+      <div
+        class="wrapper d-flex flex-row overflow-auto gap-5 py-4 px-2 align-items-center">
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/rea.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-2">
+              <h5 class="card-title my-auto pt-3 fs-3 text-black">iPhone 17</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >20%</span
+                >
+                Rp 2.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <div class="progress" style="max-height: 8px">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li
+                class="list-group-item fw-bold text-danger py-1 border-0 px-0">
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Limited Offer End -->
+
+    <!-- Popular now start -->
+    <div class="container my-5">
+      <div class="row">
+        <h2
+          class="tiltes d-flex flex-row justify-content-between align-content-center">
+          Popular Now
+          <a class="text-decoration-none fs-6 my-auto" href="#">See More ></a>
+        </h2>
+      </div>
+      <div
+        class="wrapper d-flex flex-row overflow-auto gap-4 justify-content-center py-4 px-2 align-items-center">
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/Rectangle 40.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-3 pb-2">
+              <span class="text-danger fw-bold">Hot!!</span>
+              <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                Redmi Note 10
+              </h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14 "
+                  fill="currentColor"
+                  class="bi bi-star-fill me-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span> 4.8</span>
+              </li>
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >31%</span
+                >
+                Rp 5.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 10.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/Rectangle 41.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-3 pb-2">
+              <span class="text-danger fw-bold">Hot!!</span>
+              <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                Macbook Pro
+              </h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14 "
+                  fill="currentColor"
+                  class="bi bi-star-fill me-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span> 4.8</span>
+              </li>
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >25%</span
+                >
+                Rp 20.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 25.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/Rectangle 42.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-3 pb-2">
+              <span class="text-danger fw-bold">Hot!!</span>
+              <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                Samsung 17
+              </h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14 "
+                  fill="currentColor"
+                  class="bi bi-star-fill me-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span> 4.8</span>
+              </li>
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >34%</span
+                >
+                Rp 5.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 8.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card p-4 rounded-5 border-0 shadowme"
+          style="min-width: 18rem">
+          <div class="imge overflow-hidden">
+            <div
+              class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+              star+
+            </div>
+            <img
+              class="card-img-top rounded-3 hover-card"
+              src="/assets/img/Rectangle 44.png"
+              alt="" />
+          </div>
+          <div class="card-content px-1">
+            <div class="card-body px-0 py-3 pb-2">
+              <span class="text-danger fw-bold">Hot!!</span>
+              <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                Mac Mini 17
+              </h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14 "
+                  fill="currentColor"
+                  class="bi bi-star-fill me-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span> 4.8</span>
+              </li>
+              <li
+                class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                <span
+                  class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                  >14%</span
+                >
+                Rp 29.999.999 <br />
+                <span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >Rp 32.000.000</span
+                >
+              </li>
+              <li class="list-group-item border-0 px-0">
+                <a class="btn btn-dark me-1" href="#">Details</a>
+                <a class="btn btn-outline-dark me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                ></a>
+                <a class="btn btn-danger me-1" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popular now end -->
+
+    <!-- Our Product Start -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="title mx-auto my-4">
+          <h2 class="text-center fw-bold">Our Products</h2>
+        </div>
+        <div
+          class="list d-flex flex-row gap-3 justify-content-center flex-wrap">
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="samsungcheck"
+            autocomplete="off"
+            checked />
+          <label
+            class="btn btn-outline-dark border-0 py-3 px-4 rounded-4 d-flex flex-row align-items-center gap-2"
+            for="samsungcheck"
+            ><svg
+              width="24"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Samsung</title>
+              <path
+                d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522" /></svg
+            >Samsung</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="applecheck"
+            autocomplete="off" />
+          <label
+            class="btn btn-outline-dark border-0 py-3 px-4 rounded-4 d-flex flex-row align-items-center gap-2"
+            for="applecheck"
+            ><svg
+              width="24"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Apple</title>
+              <path
+                d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" /></svg
+            >Apple</label
+          >
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="onepluscheck"
+            autocomplete="off" />
+          <label
+            class="btn btn-outline-dark border-0 py-3 px-4 rounded-4 d-flex flex-row align-items-center gap-2"
+            for="onepluscheck"
+            ><svg
+              width="24"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>OnePlus</title>
+              <path
+                d="M0 3.74V24h20.26V12.428h-2.256v9.317H2.254V5.995h9.318V3.742zM18.004 0v3.74h-3.758v2.256h3.758v3.758h2.255V5.996H24V3.74h-3.758V0zm-6.45 18.756V8.862H9.562c0 .682-.228 1.189-.577 1.504-.367.297-.91.437-1.556.437h-.245v1.625h2.133v6.31h2.237z" /></svg
+            >OnePlus</label
+          >
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="sonycheck"
+            autocomplete="off" />
+          <label
+            class="btn btn-outline-dark border-0 py-3 px-4 rounded-4 d-flex flex-row align-items-center gap-2"
+            for="sonycheck"
+            ><svg
+              width="24"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Sony</title>
+              <path
+                d="M8.5505 9.8881c.921 0 1.6574.2303 2.2209.7423.3848.3485.5999.8454.5939 1.3665a1.9081 1.9081 0 0 1-.5939 1.3726c-.5272.4848-1.3483.7423-2.221.7423-.8725 0-1.6785-.2575-2.2148-.7423-.3908-.3485-.609-.8484-.603-1.3726 0-.518.2182-1.015.603-1.3665.5-.4545 1.3847-.7423 2.2149-.7423zm.003 3.6692c.4606 0 .8878-.1606 1.1878-.4575.2999-.2999.4332-.6605.4332-1.1029 0-.4242-.1484-.821-.4333-1.1029-.2938-.2908-.7332-.4545-1.1877-.4545s-.8938.1637-1.1907.4545c-.2848.2818-.4333.6787-.4333 1.103-.006.409.1485.806.4333 1.1029.2969.2939.7332.4575 1.1907.4575zm-4.8418-1.9665c.1605.0424.315.094.4666.1636a1.352 1.352 0 0 1 .3787.2576c.197.206.309.4817.306.7665a.9643.9643 0 0 1-.3787.7788 2.0662 2.0662 0 0 1-.709.3485 3.7231 3.7231 0 0 1-1.1938.1697c-.352 0-.5467-.0406-.8138-.0962l-.077-.016c-.294-.0666-.5817-.1575-.8575-.2787a.0695.0695 0 0 0-.0424-.0121c-.0454 0-.0818.0394-.0818.0848v.203H.1212v-1.4786h.5242a.7559.7559 0 0 0 .1363.418c.2121.2607.4394.3607.6575.4395.3666.1212.7514.1848 1.1362.1969.5526 0 .8756-.134.9455-.163l.009-.0037.0062-.0023c.0616-.0226.3119-.1143.3119-.3916 0-.2743-.2338-.334-.387-.373l-.022-.0058c-.1708-.046-.562-.0872-.9897-.1323l-.1526-.016c-.4848-.0515-.9696-.1273-1.1968-.1758-.4977-.1097-.6942-.2917-.816-.4045l-.0082-.0076A1.0192 1.0192 0 0 1 0 11.1608c0-.497.3394-.797.7575-.9817.4454-.2.9756-.288 1.4392-.288.8211.0031 1.4877.2697 1.727.394.097.0515.1455-.0121.1455-.0606v-.1484h.5272v1.2876h-.4727a.9056.9056 0 0 0-.2939-.4909 1.289 1.289 0 0 0-.297-.1787c-.3968-.1667-.821-.2515-1.2513-.2455-.4423 0-.8665.085-1.0786.2153-.1333.0818-.2.1848-.2.306 0 .1727.1454.2424.2182.2636.1967.0597.6328.103.972.1369.0736.0073.1426.0142.2036.0206.3272.0334 1.012.1243 1.315.2zm18.1673-.9966v-.4787H24v.4696h-.4757c-.1727 0-.2424.0334-.3727.1788l-1.4271 1.63a.098.098 0 0 0-.0182.0698v.7423a1.106 1.106 0 0 0 .0121.103.1496.1496 0 0 0 .1.0909.9368.9368 0 0 0 .1303.009h.4848v.4698h-2.5724v-.4697h.4606a.9343.9343 0 0 0 .1302-.0091.1627.1627 0 0 0 .1031-.091.5626.5626 0 0 0 .009-.1v-.7422c0-.0242 0-.0242-.0333-.0636a606.7592 606.7592 0 0 0-1.4119-1.6028c-.0758-.0788-.2061-.2061-.406-.2061h-.4576v-.4696h2.5876v.4696h-.3121c-.0697 0-.1182.0697-.0576.1455 0 0 .8696 1.0392.8787 1.0513.0091.0122.0152.0122.0273.003.0121-.009.8938-1.0453.8999-1.0543a.0912.0912 0 0 0-.0182-.1273.1095.1095 0 0 0-.0606-.0182zm-6.284-.0031h.4848c.2212 0 .2606.0848.2636.2909l.0273 1.5664-2.5815-2.324H11.944v.4697h.412c.297 0 .3182.1636.3182.309v2.2138c.0004.1285.0009.295-.1818.295h-.506v.4667h2.1634v-.4697h-.5273c-.212 0-.2211-.097-.2242-.303v-1.8816l2.9724 2.6511h.7575l-.0394-2.9966c.003-.218.0182-.2908.2424-.2908h.4726v-.4697H15.595Z" /></svg
+            >Sony</label
+          >
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="xiaomicheck"
+            autocomplete="off" />
+          <label
+            class="btn btn-outline-dark border-0 py-3 px-4 rounded-4 d-flex flex-row align-items-center gap-2"
+            for="xiaomicheck"
+            ><svg
+              width="24"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Xiaomi</title>
+              <path
+                d="M12 0C8.016 0 4.756.255 2.493 2.516.23 4.776 0 8.033 0 12.012c0 3.98.23 7.235 2.494 9.497C4.757 23.77 8.017 24 12 24c3.983 0 7.243-.23 9.506-2.491C23.77 19.247 24 15.99 24 12.012c0-3.984-.233-7.243-2.502-9.504C19.234.252 15.978 0 12 0zM4.906 7.405h5.624c1.47 0 3.007.068 3.764.827.746.746.827 2.233.83 3.676v4.54a.15.15 0 0 1-.152.147h-1.947a.15.15 0 0 1-.152-.148V11.83c-.002-.806-.048-1.634-.464-2.051-.358-.36-1.026-.441-1.72-.458H7.158a.15.15 0 0 0-.151.147v6.98a.15.15 0 0 1-.152.148H4.906a.15.15 0 0 1-.15-.148V7.554a.15.15 0 0 1 .15-.149zm12.131 0h1.949a.15.15 0 0 1 .15.15v8.892a.15.15 0 0 1-.15.148h-1.949a.15.15 0 0 1-.151-.148V7.554a.15.15 0 0 1 .151-.149zM8.92 10.948h2.046c.083 0 .15.066.15.147v5.352a.15.15 0 0 1-.15.148H8.92a.15.15 0 0 1-.152-.148v-5.352a.15.15 0 0 1 .152-.147Z" /></svg
+            >Xiaomi</label
+          >
+        </div>
+        <div class="my-5">
+          <div
+            class="wrapper my-3 d-flex flex-row flex-wrap gap-4 mx-auto justify-content-center justify-content-sm-center justify-content-lg-start">
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 45.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                    DualShock 5
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.8</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >34%</span
+                    >
+                    Rp 8.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 12.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 56.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                    Xiaoband
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.8</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >66%</span
+                    >
+                    Rp 13.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 20.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 57.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                    Apple Mini
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.8</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >42%</span
+                    >
+                    Rp 1.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 6.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 58.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                    SmartWatch 01
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.9</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >28%</span
+                    >
+                    Rp 3.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 11.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 59.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">Bardi</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.8</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >44%</span
+                    >
+                    Rp 23.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 100.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme"
+              style="min-width: 18rem">
+              <div class="imge overflow-hidden">
+                <div
+                  class="pin position-absolute mx-3 my-2 py-1 px-2 rounded-2 bg-danger text-white">
+                  star+
+                </div>
+                <img
+                  class="card-img-top rounded-3 hover-card"
+                  src="/assets/img/Rectangle 62.png"
+                  alt="" />
+              </div>
+              <div class="card-content px-1">
+                <div class="card-body px-0 py-3 pb-2">
+                  <span class="text-danger fw-bold">Hot!!</span>
+                  <h5 class="card-title my-auto pt-1 fs-3 text-black">
+                    Dell XPS
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item fw-bold text-warning py-1 border-0 px-0 d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14 "
+                      fill="currentColor"
+                      class="bi bi-star-fill me-2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <span> 4.8</span>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-5 border-0 text-danger px-0">
+                    <span
+                      class="px-2 bg-danger text-white rounded py-1 fw-semibold fs-6"
+                      >55%</span
+                    >
+                    Rp 10.999.999 <br />
+                    <span
+                      class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                      >Rp 21.000.000</span
+                    >
+                  </li>
+                  <li class="list-group-item border-0 px-0">
+                    <a class="btn btn-dark me-1" href="#">Details</a>
+                    <a class="btn btn-outline-dark me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /></svg
+                    ></a>
+                    <a class="btn btn-danger me-1" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="card p-4 rounded-5 border-0 shadowme bg-dark"
+              style="min-width: 18rem; width: 36rem">
+              <a
+                class="text-decoration-none top-50 mx-auto my-auto fs-3 text-white fw-bolder"
+                href="#"
+                >See More for All of Our Product ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Product End -->
+    <div class="my-5 py-5"></div>
+    <div class="my-4 py-4"></div>
+    <!-- Hero Review Start -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="px-4 py-5 my-5 text-center">
+          <span class="fs-3 fw-bold text-primary"
+            >GRIYA <span class="fw-normal">BOX</span> MAKMUR
+          </span>
+          <h1 class="display-5 fw-bold mt-3">We Prioritize our Customer</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              Our Costumer are writing their happy review for our services,
+              press the button to see all of their review or just Start Shopping
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                Review
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4">
+                Start Shopping
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Review End -->
+    <div class="my-5 py-5"></div>
+    <!-- Review Hero Start -->
+    <div class="container my-5">
+      <div class="row mx-5">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <form
+            class="container-fluid py-5 gap-3 d-flex flex-column justify-content-center">
+            <h1 class="fs-1 my-0 py-0 fw-bold text-center">
+              Join Our Newsletter!
+            </h1>
+            <span class="mx-auto mb-1"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+              assumenda?</span
+            >
+            <input
+              style="max-width: 768px"
+              class="form-control form-control-lg mx-auto"
+              type="email"
+              placeholder="john.doe@example.com"
+              aria-label=".form-control-lg subscribe" />
+
+            <button
+              style="max-width: 256px"
+              class="btn btn-primary btn-lg mx-auto"
+              type="button">
+              Subscribe!
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Review Hero END -->
+    <div class="my-5 py-5"></div>
+    <!-- Footer Start -->
+    <div class="container mt-5">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <span class="fw-bold fs-5"
+              >GRIYA<span class="fs-5 fw-normal">BOX</span></span
+            >
+          </a>
+          <p class="text-muted">© 2022</p>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
